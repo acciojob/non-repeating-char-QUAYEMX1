@@ -7,12 +7,14 @@ function firstNonRepeatedChar(str) {
 			arr[str[i]]++;
 		}
 	}
-	for(int i=0;i<arr.length;i++){
-		if(arr[i]==1){
-			return i;
+
+	for(let x in arr){
+		if(arr[x]==1){
+			return x;
 		}
 	}
+	
 	return null;
 }
-const input = prompt("Enter a string");
+// const input = prompt("Enter a string");
 alert(firstNonRepeatedChar(input)); 
